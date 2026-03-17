@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This is comment
-NUMBER1=100
+NUMBER1=satya
 NUMBER2=200
 
 TIMESTAMP=$(date)
