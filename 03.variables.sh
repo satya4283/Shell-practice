@@ -1,6 +1,6 @@
 #!bin/bash
 
-PERSON1=modi
+PERSON1=modi # There should be no speace before or after =
 PERSON2=musk
 
 echo "$PERSON1:: Hi $PERSON2, How are you"
