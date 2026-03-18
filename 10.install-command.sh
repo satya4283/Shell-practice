@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-if [ $USERID -eq 0 ]
+if[ $USERID -eq 0 ]
 then
     echo "ERROR: please run this script with root access."
 else
