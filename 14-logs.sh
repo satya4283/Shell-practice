@@ -34,7 +34,7 @@ VALIDATE(){
 }
 
 
-dnf list installed mysql  | tee -a $LOG_FILE
+dnf list installed mysql  &>>$LOG_FILE
 if [ $? -ne 0 ]
 then
     echo "MYSQL is not installed... going to install" | tee -a $LOG_FILE
@@ -45,7 +45,7 @@ else
 fi
 
 
-dnf list installed python3 | tee -a $LOG_FILE
+dnf list installed python3 &>>$LOG_FILE
 if [ $? -ne 0 ]
 then
     echo "python3 is not installed... going to install" | tee -a $LOG_FILE
@@ -56,7 +56,7 @@ else
 fi
 
 
-dnf list installed nginx  | tee -a $LOG_FILE
+dnf list installed nginx  &>>$LOG_FILE
 if [ $? -ne 0 ]
 then
     echo "nginx is not installed... going to install" | tee -a $LOG_FILE
